@@ -3,15 +3,17 @@
     <head>
         <meta charset="utf-8"/>
         <title>inscription </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
     </head>
     <body>
         <img src="image/logo-traditionnel-motif-floral-asiatique_57043-241.jpg" align="left" width="150"/>
         <title><h1><b><i> INSCRIPTION </i></b></h1></title> <br>
 
         <hr>
-        <a href = "connexion.html"><button>connexion</button></a><br>
+        <a href = "connexion.html"><button type="button"class="btn btn-success">connexion</button></a><br>
 
-        <a href ="index.html"><button>home</button></a><br>
+        <a href ="index.html"><button type="button" class="btn btn-link">home</button></a><br>
         <hr>
         <form name=" " method=" "  action=" ">
                 
@@ -25,8 +27,24 @@
                 <input type="radio" name="genre" value="male">male
                 <input type="radio" name="genre" value="female"> female
                 <input type="radio" name="genre" value="autre">autre <br>
-                <label for="email">E-mail : </label>
-                <input type="email" id="email" placeholder="votre email" required> <br>
+                <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Password : </label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputp" class="col-sm-2 col-form-label"> confirmer votre mot de passe : </label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputp" placeholder="confirmermdp">
+                        </div>
+                    </div>
                 <label for="date">date de naissance : </label>
                 <input type="date"/><br>
                 <label> nationnalité : </label>
@@ -39,14 +57,13 @@
                         </select> <br> 
                         <label> intrét : </label>
                         <input type="checkbox" value="sport" checked>sport<br>
+
                         <input type="checkbox" value="camping" checked>camping<br>
                         <input type="checkbox" value="musique" checked>musique<br>
                         <input type="checkbox" value="dessin"checked>dessin<br>
                         <input type="checkbox" value="shopping" checked>shopping<br>
                         <input type="checkbox" value="restaurant"checked>restaurant<br>
                         
-                        <label for="mdp"> votre mot de passe : </label>
-                        <input type="password" id="mdp" required/><br>
                         <label for="mdp1"> confirmer votre mot de passe : </label>
                         <input type="password" id="mdp2" required/><br>
                         <input type ="submit" value="envoyer"/>
