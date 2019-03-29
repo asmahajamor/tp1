@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8"/>
         <title>inscription </title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../tp1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="../../tp1/css/style.css"/>
+
 
     </head>
     <body>
@@ -17,37 +19,37 @@
         <hr>
         <form name=" " method=" "  action=" ">
                 
-                <label for="nom">Nom: </label>
+                <label class="nom" for="nom">Nom: </label>
                 <input type="text"  id="nom" placeholder="entrer nom" required/><br>
-                <label for="prenom">prénom </label>
+                <label class="prenom" for="prenom">prénom </label>
                 <input type="text"  id="prenom" placeholder="entrer prenom" required/><br>
-                <label for="telephone"> telephone : </label>
+                <label class="teleph" for="telephone"> telephone : </label>
                 <input type="number" id="telephone" placeholder="votre numéro" required/><br>
-                <label for="genre"> genre : </label>
+                <label class="genre" for="genre"> genre : </label>
                 <input type="radio" name="genre" value="male">male
                 <input type="radio" name="genre" value="female"> female
                 <input type="radio" name="genre" value="autre">autre <br>
                 <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <label class="mail" for="staticEmail" class="col-sm-2 col-form-label">Email</label>
                         <div class="col-sm-10">
                           <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
                         </div>
                       </div>
                       <div class="form-group row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">Password : </label>
+                        <label class="pass" for="inputPassword" class="col-sm-2 col-form-label">Password : </label>
                         <div class="col-sm-10">
                           <input type="password" class="form-control" id="inputPassword" placeholder="Password">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputp" class="col-sm-2 col-form-label"> confirmer votre mot de passe : </label>
+                        <label class="pass2"for="inputp" class="col-sm-2 col-form-label"> confirmer votre mot de passe : </label>
                         <div class="col-sm-10">
                             <input type="password" class="form-control" id="inputp" placeholder="confirmermdp">
                         </div>
                     </div>
-                <label for="date">date de naissance : </label>
+                <label class="dte" for="date">date de naissance : </label>
                 <input type="date"/><br>
-                <label> nationnalité : </label>
+                <label class="nat"> nationnalité : </label>
                 <select>
                         <option value="Maroc" selected> Maroc </option>
                         <option value="espagne" selected> espagne</option>
@@ -55,7 +57,7 @@
                         <option value="japon" selected> japon</option>
                         <option value ="mexique" selected> mexique </option> 
                         </select> <br> 
-                        <label> intrét : </label>
+                        <label class="int"> intrét : </label>
                         <input type="checkbox" value="sport" checked>sport<br>
 
                         <input type="checkbox" value="camping" checked>camping<br>
@@ -64,11 +66,12 @@
                         <input type="checkbox" value="shopping" checked>shopping<br>
                         <input type="checkbox" value="restaurant"checked>restaurant<br>
                         
-                        <label for="mdp1"> confirmer votre mot de passe : </label>
+                        <label class="vr" for="mdp1"> confirmer votre mot de passe : </label>
                         <input type="password" id="mdp2" required/><br>
-                        <button type="button" class="btn btn-secondary btn btn-secondary">envoyer</button>
-                        <button type="button" class="btn btn-secondary btn btn-danger">effacer</button>
-
+        
+                        <input type ="submit" value="envoyer"/>
+                        <input type="reset" value="effacer"/>
+        
 
 
 
